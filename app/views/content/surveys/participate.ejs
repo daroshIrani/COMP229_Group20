@@ -1,0 +1,107 @@
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= survey.title %></h1>
+
+            <form class="form" method="POST">
+                <input type="hidden" name="surveyId" value="<%= survey._id %>" >
+                <input type="hidden" name="title" value="<%= survey.title %>" >
+                <div class="form-group">
+                    <label for="authorTextField"><%= survey.question1 %></label>
+                    <input type="text" class="form-control"
+                    id="authorTextField"
+                    placeholder="Enter your answer"
+                    name="answer1" 
+                    value="<%= survey.answer1 %>"
+                    required>
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="publishedTextField"><%= survey.question2 %></label>
+                    <input type="text" class="form-control"
+                    id="publishedTextField"
+                    placeholder="Enter your answer"
+                    name="answer2" 
+                    value="<%= survey.answer2 %>"
+                    required>
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="publishedTextField"><%= survey.question3 %></label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answer3" id="inlineRadio1" value="Yes">
+                        <label class="form-check-label" for="answer3">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answer3" id="inlineRadio2" value="No">
+                        <label class="form-check-label" for="answer3">No</label>
+                      </div>    
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="publishedTextField"><%= survey.question4 %></label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answer4" id="inlineRadio1" value="Yes">
+                        <label class="form-check-label" for="answer4">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answer4" id="inlineRadio2" value="No">
+                        <label class="form-check-label" for="answer4">No</label>
+                      </div> 
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="publishedTextField"><%= survey.question5 %></label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answer5" id="inlineRadio1" value="Yes">
+                        <label class="form-check-label" for="answer4">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answer5" id="inlineRadio2" value="No">
+                        <label class="form-check-label" for="answer5">No</label>
+                      </div>
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="publishedTextField"><%= survey.question6 %></label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answer6" id="inlineRadio1" value="18-25">
+                        <label class="form-check-label" for="multiplechoice1">18-25</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answer6" id="inlineRadio2" value="26-35">
+                        <label class="form-check-label" for="multiplechoice2">26-35</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answer6" id="inlineRadio2" value="36-55">
+                        <label class="form-check-label" for="multiplechoice3">36-55</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answer6" id="inlineRadio2" value="56-75">
+                        <label class="form-check-label" for="multiplechoice3">56-75</label>
+                      </div>
+                </div> 
+
+                <br>
+                
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit</button>
+                
+                    <a href="/survey-list" class="btn btn-warning">
+                        <i class="fas fa-undo"></i> Cancel</a>
+
+            </form>
+        </div>
+
+    </div>
+</div>

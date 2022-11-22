@@ -1,0 +1,107 @@
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+                <input type="hidden" name="id" value="<%= survey._id %>" >
+                <div class="form-group">
+                    <label for="nameTextField"><%= survey.title %></label>
+                    <input type="text" class="form-control"
+                    id="nameTextField"
+                    placeholder="Enter the Survey Title"
+                    name="title" 
+                    value="<%= survey.title %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="authorTextField"><%= survey.question1 %></label>
+                    <input type="text" class="form-control"
+                    id="authorTextField"
+                    placeholder="Enter the Question"
+                    name="question1" 
+                    value="<%= survey.question1 %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="publishedTextField">Question2 : Short Answer</label>
+                    <input type="text" class="form-control"
+                    id="publishedTextField"
+                    placeholder="Enter the Question"
+                    name="question2" 
+                    value="<%= survey.question2 %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="publishedTextField">Question3 : Yes/No</label>
+                    <input type="text" class="form-control"
+                    id="publishedTextField"
+                    placeholder="Enter the Question"
+                    name="question3" 
+                    value="<%= survey.question3 %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="publishedTextField">Question4 : Yes/No</label>
+                    <input type="text" class="form-control"
+                    id="publishedTextField"
+                    placeholder="Enter the Question"
+                    name="question4" 
+                    value="<%= survey.question4 %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="publishedTextField">Question5 : Multiple Choice</label>
+                    <input type="text" class="form-control"
+                    id="publishedTextField"
+                    placeholder="Enter the Question"
+                    name="question5" 
+                    value="<%= survey.question5 %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="publishedTextField">Question6 : Choices List</label>
+                    <input type="text" class="form-control"
+                    id="publishedTextField"
+                    placeholder="Enter the Question"
+                    name="question6" 
+                    value="<%= survey.question6 %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="startDate">Start Date : </label>
+                    <input type="date" class="form-control"
+                    id="startDate"
+                    name="startDate" 
+                    value="<%= survey.startDate %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="endDate">End Date : </label>
+                    <input type="date" class="form-control"
+                    id="endDate"
+                    name="endDate" 
+                    value="<%= survey.endDate %>"
+                    required>
+                </div>
+
+                
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit</button>
+                
+                    <a href="/survey-list" class="btn btn-warning">
+                        <i class="fas fa-undo"></i> Cancel</a>
+
+            </form>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="container">
+    <h1 class="text-center"><%= title %></h1>
+    <div class="card text-center">
+    
+    <% if(answers.surveyId = survey._id){ %>
+        <% for(let count = 0; count < answers.length; count++) { %>
+        <div class="card-header">
+            <h3>"<%= survey.title %>"</h3>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><%= survey.question1 %></h5>
+          <p class="card-text"><%= answers[count].answer1%></p>
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title"><%= survey.question2 %></h5>
+            <p class="card-text"><%= answers[count].answer2%></p>
+          </div>
+
+        <div class="card-body">
+          <h5 class="card-title"><%= survey.question3 %></h5>
+          <p class="card-text"><%= answers[count].answer3%></p>
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title"><%= survey.question4 %></h5>
+            <p class="card-text"><%= answers[count].answer4%></p>
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title"><%= survey.question5 %></h5>
+          <p class="card-text"><%= answers[count].answer5%></p>
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title"><%= survey.question6 %></h5>
+            <p class="card-text"><%= answers[count].answer6%></p>
+        </div>
+        <% } %>
+    <% } %>
+        <div class="card-footer text-muted">
+            <a href="/survey-list" class="btn btn-warning text-center">
+                <i class="fas fa-undo"></i> Return to Survey Listing</a>
+        </div>
+      </div>
+
+</div> 
